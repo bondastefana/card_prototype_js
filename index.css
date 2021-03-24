@@ -1,0 +1,143 @@
+body {
+  padding: 20px;
+  font-family: 'Nunito', sans-serif !important;
+}
+
+div.needed-money {
+  background: rgb(56, 54, 54);
+  color: white;
+  max-width: 450px;
+  padding: 20px 0;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 25px;
+}
+
+.amount {
+  font-weight: bold;
+}
+
+div.progress-component {
+  max-width: 450px;
+  margin-top: 20px;
+  border-radius: 0;
+  border: 1px solid rgb(187, 186, 186);
+}
+
+div.progress-bar {
+  background: salmon;
+}
+
+button.btn-success {
+  background: rgb(22, 190, 86);
+  font-weight: bold;
+}
+
+div.main-content {
+  color: gray;
+  font-size: 22px;
+  max-width: 450px;
+  padding: 30px;
+  border: 1px solid rgb(187, 186, 186);
+  box-shadow: 0 4px 2px -2px rgb(187, 186, 186);
+}
+
+span.main-content-bold {
+  font-weight: bold;
+  color: salmon;
+}
+
+.join {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.donors {
+  font-weight: bold;
+}
+
+div.input-action-container {
+  padding: 0;
+}
+
+input.input-action {
+  padding: 20px 10px;
+  border-left: 0;
+  border-color: rgb(187, 186, 186);
+  font-size: 30px;
+  line-height: 30px;
+}
+
+span.input-group-text {
+  border-top: 1px solid rgb(187, 186, 186);
+  border-bottom: 1px solid rgb(187, 186, 186);
+  border-left: 1px solid rgb(187, 186, 186);
+  border-right: 0;
+  border-color: rgb(187, 186, 186);
+  background: white;
+  font-size: 20px;
+  font-weight: bold;
+  color: gray;
+  padding: 20px 0px 20px 15px;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+a.why-give {
+  color: rgb(0, 159, 233);
+  text-decoration: none;
+  font-style: italic;
+}
+
+a.why-give:hover {
+  cursor: pointer;
+}
+
+input.input-action, input.input-action::placeholder {
+  font-weight: bold;
+  color: black;
+}
+
+button.action-button {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+div.buttons-container {
+  margin-top: 20px;
+  max-width: 450px;
+}
+
+button.save-button, button.tell-button {
+  width: 100%;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  border-width: 1px 1px 3px 1px;
+  border-color: rgb(187, 186, 186);
+}
+
+div.button-left, div.button-right {
+  display: flex;
+}
+
+div.button-left {
+  justify-content: flex-start;
+}
+
+div.button-right {
+  justify-content: flex-end;
+}
+
+.arrow-down {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid rgb(56, 54, 54);
+  left: 320px;
+  margin-top: -2px;
+}
