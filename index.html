@@ -14,12 +14,19 @@
 </head>
 
 <body>
-  <div class="container-fluid">
+  <div class="container-fluid app-container">
     <div class="row">
       <div class="col-12">
-        <div class=" needed-money">
-          <span class="amount">$167</span>
+        <div class="needed-money initial">
+          <span class="amount">$</span><span class="amount needed-amount"></span>
           <span>still needed for this project</span>
+        </div>
+        <div class="needed-money exceeded">
+          <span class="amount">$</span><span class="amount needed-amount"></span>
+          <span>above our target! Thanks!</span>
+        </div>
+        <div class="needed-money">
+          <span class="needed-amount">We reached our target!</span>
         </div>
         <div class="arrow-down"></div>
       </div>
@@ -41,15 +48,18 @@
               <div class="col-6">
                 <div class="input-group mb-3">
                   <span class="input-group-text" id="basic-addon1">$</span>
-                  <input type="text" class="form-control input-action" placeholder="" aria-label="amount"
-                    aria-describedby="basic-addon1" onkeypress="return onlyNumberKey(event)">
+                  <input type="number" min="1" step="1" class="form-control input-action" placeholder=""
+                    aria-label="amount" aria-describedby="basic-addon1" onkeypress="return onlyNumberKey(event)">
                 </div>
               </div>
               <div class="col-6">
-                <button type="button" class="btn btn-success action-button">Give Now</button>
+                <button type="button" onclick="donateAmount()" class="btn btn-success action-button">Give Now</button>
               </div>
               <div class="col-12">
                 <a class="why-give">Why give $<span id="amount"></span>?</a>
+              </div>
+              <div class="col-12">
+                <a class="why-donate">Why donate?</a>
               </div>
             </div>
           </div>

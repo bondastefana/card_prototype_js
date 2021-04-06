@@ -3,6 +3,10 @@ body {
   font-family: 'Nunito', sans-serif !important;
 }
 
+.app-container {
+  max-width: 450px;
+}
+
 div.needed-money {
   background: rgb(56, 54, 54);
   color: white;
@@ -83,13 +87,17 @@ span.input-group-text {
   line-height: 30px;
 }
 
-a.why-give {
+.hide-element {
+  display: none;
+}
+
+a.why-give, a.why-donate {
   color: rgb(0, 159, 233);
   text-decoration: none;
   font-style: italic;
 }
 
-a.why-give:hover {
+a.why-give:hover, a.why-donate:hover {
   cursor: pointer;
 }
 
@@ -132,12 +140,11 @@ div.button-right {
 }
 
 .arrow-down {
-  position: absolute;
   width: 0;
   height: 0;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   border-top: 10px solid rgb(56, 54, 54);
-  left: 320px;
+  margin-left: 80%;
   margin-top: -2px;
 }
